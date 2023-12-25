@@ -1,0 +1,271 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root{
+  height: 100%;
+  width: 100%;
+}
+*::selection{
+  color: white;
+  background: #000;
+}
+
+:root {
+  overflow-y: auto;
+  background-color: #F7F7F7;
+  
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide scrollbar for chrome, safari and opera */
+:root::-webkit-scrollbar {
+  display: none;
+}
+
+
+@font-face {
+  font-family: Futura;
+  src: url(./assets/Futura-Bold.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./assets/Gilroy-Medium.ttf);
+}
+
+
+#nav {
+  height: 100px;
+  width: 100%;
+  /* background-color: burlywood; */
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+  top: 0;
+}
+
+#nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#links {
+  padding: 10px;
+}
+
+#nav-part1 {
+  /* background-color: RED; */
+  height: 82px;
+  overflow: hidden;
+}
+
+#nav-part1 svg {
+  display: block;
+}
+
+#nav-part2 #links a {
+  text-transform: uppercase;
+
+  text-decoration: none;
+  /* color: #333; */
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+#icons {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #F7F7F7;
+  display: flex;
+}
+
+#nav-part2 #icons .i {
+  font-size: 18px;
+  margin: 0 20px;
+  font-weight: 100;
+}
+
+
+
+#page1 {
+  min-height: 100vh;
+  /* background-color: aqua; */
+  position: relative;
+  width: 100%;
+  padding: 0 1.3vw;
+  padding-top: 20vh;
+  margin-top: 5vw;
+
+}
+
+#page1 h1 {
+  font-size: 15.8vw;
+  text-transform: uppercase;
+  font-family: futura;
+  line-height: 14vw;
+  letter-spacing: -8px;
+}
+
+#video-container {
+  height: 100vh;
+  width: 100%;
+  background-color: grey;
+  margin-top: 1vw;
+  position: relative;
+}
+
+#video-container>video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#video-container > #play {
+  padding: 3vw 2.2vw;
+  background-color: black;
+  color: #fff;
+  font-size: 1.3vw;
+  position: fixed;
+  text-transform: uppercase;
+  font-family: futura;
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0;
+
+}
+
+#page2{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 1.3vw;
+}
+
+#page2 .elem{
+  height: 100%;
+  width: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+#page2 .elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1.1;
+}
+/* #page2 .elem .dets {
+  height: 60px;
+  border-radius: 50px;
+  width: 70%;
+  position: absolute;
+  z-index: 9;
+  background-color: rgb(229, 156, 186);
+
+} */
+
+
+#page4 {
+  min-height: 120vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.child {
+  height: 54vh;
+  width: 38vw;
+  /* background-color: red; */
+  /* border: 2px solid #000; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.child>h3{
+  text-transform: uppercase;
+  margin-top: 1vw;
+  font-size: 0.8vw;
+  font-family:  Gilroy;
+}
+.child>p{
+  margin-top: 1vw;
+  font-size: 0.7vw;
+}
+
+.child img {
+  height: 200vw;
+  width: 100%;
+}
+
+#page5{
+  height: 50vw;
+  position: relative;
+}
+
+#page5>button{
+  background: #000;
+  height: 4vw;
+  width: 20vw;
+  position: absolute;
+  left: 42vw;
+  top: 40vw;
+  font-family: Gilroy;
+  font-size: 1.2vw;
+  font-weight: 300;
+  color: white;
+  border-radius: 38px;
+  border: none;
+}
+#page5>span{
+  position: absolute;
+  left: 44vw;
+  top: 46vw;
+  font-family: Gilroy;
+  font-size: 1vw;
+}
+
+#page6>div>h1{
+  font-family: Gilroy;
+  font-size: 1.7vw;
+  font-weight: 900;
+}
+
+#page6>div>p{
+  font-family: Gilroy;
+  margin-top: 1.4vw;
+  font-size: 1.1.vw;
+}
+#footer{
+  background: #F7F7F7;
+  color: black;
+}
+#footer>div>ul>li{
+  color: black;
+}
+
+#footer>div>ul>li:hover{
+  color: rgb(135, 135, 135);
+  cursor: pointer;
+}
+
+
